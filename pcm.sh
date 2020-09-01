@@ -2,7 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 REPO="git@github.com:lyuben-todorov/piko.git"
-CONFIG=configs/*
+CONFIG=configs_enabled/*
 
 if [ ! -d "/piko" ]
 then
@@ -16,6 +16,6 @@ for f in $CONFIG
 do
 	echo "Starting $f"
 	
-	./piko/target/release/main -p "$DIR/$f" & disown
+	./piko/target/release/main -p "$DIR/$f"
 done
 

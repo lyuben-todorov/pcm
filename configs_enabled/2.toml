@@ -1,10 +1,10 @@
 [node]
 name = "Boris"
-host = "127.0.0.2"
-port = 7878
+host = "127.0.0.1"
+port = 7879
 thread_count = 4
 
 [cluster]
 name = "Bramchalka"
-neighbours = ["127.0.0.1"]
+neighbours = ["127.0.0.1:7878"]
 
