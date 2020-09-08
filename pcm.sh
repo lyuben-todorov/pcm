@@ -11,11 +11,11 @@ then
 	cd ..
 fi
 
+export RUST_BACKTRACE=1
 
 for f in $CONFIG
 do
 	echo "Starting $f"
-	
 	./piko/target/release/main -p "$DIR/$f"
 done
 
