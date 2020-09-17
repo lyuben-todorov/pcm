@@ -2,6 +2,8 @@
 name = "Boris"
 host = "127.0.0.1"
 port = 7879
+client_host = "127.0.0.1"
+client_port = "8879"
 thread_count = 4
 
 [cluster]
